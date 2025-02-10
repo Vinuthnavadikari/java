@@ -1,0 +1,20 @@
+import java.util.*;
+
+class Main {
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    
+    int x = sc.nextInt();
+    int y = sc.nextInt();
+    
+    // Peter's house is at (3,4)
+    int dx = Math.abs(x - 3);
+    int dy = Math.abs(y - 4);
+    
+    int hops = Math.max(dx, dy); // Using max instead of sum for correct movement
+
+    System.out.println(hops);
+    
+    sc.close();
+  }
+}
